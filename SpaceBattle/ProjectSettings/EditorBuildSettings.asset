@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Gundam Build Fighters.unity
+    guid: ddcd0e654fc191045a6212ffcd400abd
   m_configObjects: {}

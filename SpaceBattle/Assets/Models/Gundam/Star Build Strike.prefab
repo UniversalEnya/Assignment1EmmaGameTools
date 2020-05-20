@@ -487,7 +487,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3984364530132495285}
-  - component: {fileID: 3265820701164895657}
+  - component: {fileID: 7116936186717595229}
   m_Layer: 0
   m_Name: Star Build Strike
   m_TagString: Untagged
@@ -510,28 +510,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3265820701164895657
-MonoBehaviour:
+--- !u!136 &7116936186717595229
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76587268237711782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c9f8e56fe9457e46a86cb75e9472e74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: {x: 0, y: 0, z: 0}
-  acceleration: {x: 0, y: 0, z: 0}
-  force: {x: 0, y: 0, z: 0}
-  mass: 1
-  maxSpeed: 5
-  maxForce: 10
-  speed: 0
-  seekEnabled: 0
-  target: {x: 0, y: 0, z: 0}
-  banking: 0.1
+  m_Radius: 1000
+  m_Height: 2000
+  m_Direction: 1
+  m_Center: {x: 3400, y: 100, z: 0}
 --- !u!1 &101148532199509922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,8 +1380,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245813354669808058}
   m_LocalRotation: {x: 0.03700707, y: 0.7061378, z: 0.7061378, w: -0.03700707}
-  m_LocalPosition: {x: -3014, y: 0, z: 317}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 6362256133201735983}
   - {fileID: 5481958857851043456}

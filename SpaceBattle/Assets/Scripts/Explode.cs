@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class Explode : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    float health = 1;
+    public GameObject effect;
+
+    void OnCollisionEnter(Collision col)
     {
-        
+        if (col.gameObject.tag == "bullet")
+        {
+            health--;
+            if (health <= 0)
+            { Dead(); }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void Dead()
     {
-        
+        GameObject boom = Instantiate(effect, transform.position, transform.rotation);
+        Destroy(boom.gameObject, 10);
+        Destroy(gameObject);
     }
+    
 }

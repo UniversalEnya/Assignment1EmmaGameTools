@@ -22,7 +22,18 @@ public class Movement : MonoBehaviour
     [Range(0.0f, 10.0f)]
     public float banking = 0.1f;
 
+    public bool fightEnabled = false;
 
+
+    void OnTriggerStay(Collider mock)
+    {
+        if (fightEnabled)
+        {
+            maxSpeed = 20;
+
+            target = mock.transform.position;
+        }
+    }
 
     public void OnDrawGizmos()
     {
@@ -57,6 +68,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
         float dist = Vector3.Distance(target, transform.position);
+
 
         if (targetTransform != null)
         {
